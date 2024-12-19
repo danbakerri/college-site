@@ -8,7 +8,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", serif;
 }
+a {
+  transition: all 0.4s ease;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
 /****** nav ********/
+
+.mobil-search {
+  width: 100%;
+  margin-right: 1.2em;
+}
+.offcanvas-body {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: initial;
+}
 @media only screen and (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-body {
     flex-direction: column !important;
@@ -17,27 +54,110 @@ body {
 .navbar-brand img {
   width: 200px;
 }
+/*
+@media only screen and (min-width: 992px) {
+  .dropdown-toggle::after {
+    border: 0px !important;
+    position: absolute;
+    content: "";
+    background-color: #1b44a0;
+    width: 100%;
+    left: 0;
+    bottom: 4px;
+    height: 0;
+    transition: 0.25s ease-in-out;
+  }
+  .dropdown-toggle:hover:after {
+    height: 3px;
+  }
+  .dropdown-toggle.show::after {
+    height: 3px;
+  }
+}
 
+*/
+.main-nav .dropdown {
+  position: static;
+}
+@media only screen and (min-width: 992px) {
+  .dropdown-toggle::after {
+    content: "";
+    border: none;
+    margin: 0px;
+    vertical-align: initial;
+    padding: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .main-nav .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    background: #1616169c;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    height: 100vh;
+    margin-top: 4em;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    border: none;
+    margin-top: -1px;
+    border-radius: 0px;
+
+    padding: 4em 1.5em;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.main-nav {
+  gap: 5px;
+}
+
+form.desk-top-form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+a.navbar-brand:hover {
+  opacity: 0.8;
+}
 .btn-nav {
   gap: 0.5em;
   margin-bottom: 1em;
   margin-top: 0.8em;
 }
-.main-nav a.nav-link.dropdown-toggle {
-  padding: 0.8em 0.7em;
-}
+
 .btn-nav .nav-link {
   background: #2c928d;
   color: #fff;
   padding: 0.7em 1.5em !important;
   border-radius: 2px;
   font-weight: 500;
+  text-align: center;
 }
-
+.btn-nav .nav-link:hover {
+  background: #237c78;
+}
 .main-nav a.nav-link.dropdown-toggle {
-  padding: 0.8em 0.7em;
+  padding: 0.8em 0.7em 0.6em;
   color: #0b2753;
   font-weight: 500;
+  margin-bottom: 0.2em;
+  border-bottom: solid 0px;
+}
+
+a.searchy.nav-link.dropdown-toggle {
+  padding-bottom: 2.8px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-nav a.nav-link.dropdown-toggle:hover {
+    color: #6175ab;
+  }
+  .main-nav a.nav-link.dropdown-toggle.show {
+    color: #6175ab;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .navbar-brand img {
