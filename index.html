@@ -253,7 +253,16 @@
 
           <source src="./images/college-vid.mp4" type="video/mp4" />
         </video>
-        <div class="hero-heading">
+        <button
+          class="header-vid-btn hide-btn"
+          onclick="playVid()"
+          type="button"
+        >
+          <span class="material-icons"> play_arrow </span></button
+        ><button class="header-vid-btn" onclick="pauseVid()" type="button">
+          <span class="material-icons"> pause </span>
+        </button>
+        <div class="reveal hero-heading">
           <h2>One of the Nation's Top STEM Schools</h2>
         </div>
         <div class="hero-img">
@@ -268,5 +277,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/script.js" crossorigin="anonymous"></script>
   </body>
 </html>
