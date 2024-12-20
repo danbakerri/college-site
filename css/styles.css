@@ -14,7 +14,7 @@ a {
 .reveal {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
-  transition: opacity 0.8s, transform 0.8s;
+  transition: opacity 1s, transform 1s;
 }
 .reveal_visible {
   opacity: 1;
@@ -353,6 +353,104 @@ nav.navbar.navbar-expand-lg {
 }
 .section.section-one {
   position: relative;
-  height: 1000px;
+  padding: 6em 0em;
   background: #0d2753;
+}
+
+/* --------------------------------
+
+ Block Styles - Featured Content full width
+
+-------------------------------- */
+.full-width-feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  font-size: 0.7em;
+  padding: 0em 0em 0em 0em;
+  margin-bottom: 3em;
+  gap: 10px;
+}
+@media (min-width: 767px) {
+  .full-width-feature {
+    font-size: 1em;
+  }
+}
+.fullwidth-edit-section .full-width-feature:last-of-type {
+  margin-bottom: 0em;
+}
+
+.feature-img {
+  flex-basis: 50%;
+}
+.feature-img img {
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.feature-content {
+  padding: 2em 15px 0px;
+  color: #fff;
+}
+span.feature-heading-green {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  font-size: 4.5em;
+  line-height: 1em;
+  display: block;
+  font-family: "EB Garamond", "Times New Roman", serif;
+
+  color: #fff;
+}
+.feature-content p {
+  font-size: 1.5em;
+}
+a.btn-green.no-btn {
+  display: none !important;
+}
+a.btn-green.display-btn {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.3em 2em;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 800;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #6175ab, #2c928d) 1;
+
+  margin-top: 1em;
+}
+
+a.btn-green.display-btn:hover {
+  border: solid 4px #fff;
+  background: #fff;
+  color: #0d2753;
+}
+
+@media only screen and (min-width: 992px) {
+  .full-width-feature {
+    flex-direction: row;
+    padding: 0em;
+  }
+  .feature-content {
+    flex-basis: 50%;
+    padding: 2em 3em;
+    align-content: center;
+  }
+  .feature-img-right .feature-img {
+    order: 2;
+  }
+}
+@media only screen and (min-width: 1630px) {
+  .feature-content {
+    padding: 2em 6em;
+  }
+}
+@media only screen and (min-width: 2060px) {
+  .full-width-feature {
+    padding: 0em 4vw;
+  }
 }

@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 var rafId = null;
-var delay = 300;
+var delay = 500;
 var lTime = 0;
 
 function scroll() {
