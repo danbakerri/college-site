@@ -351,9 +351,13 @@ nav.navbar.navbar-expand-lg {
   /* z-index: 5; */
   color: #fff;
 }
-.section.section-one {
+
+.section {
   position: relative;
   padding: 6em 0em;
+}
+
+.section.section-one {
   background: #0d2753;
 }
 
@@ -453,4 +457,130 @@ a.btn-green.display-btn:hover {
   .full-width-feature {
     padding: 0em 4vw;
   }
+}
+
+/* -------------------------------- 
+
+Sec two
+-------------------------------- */
+
+.head {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 5em;
+}
+.head h2 {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  font-size: 5.5em;
+  line-height: 1em;
+  display: block;
+  font-family: "EB Garamond", "Times New Roman", serif;
+  color: #1e1e1e;
+}
+.head p {
+  font-size: 1.5em;
+}
+/* -------------------------------- 
+
+Stats Content Styles
+
+-------------------------------- */
+.section-two {
+  margin: 0 auto;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 767px) {
+  .section-two {
+    font-size: 1em;
+  }
+}
+
+.fig-number,
+.percent {
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  /* margin-bottom: 1em; */
+  font-weight: bold;
+
+  display: inline-block;
+  color: #1e1e1e;
+  line-height: 1.2em;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  max-width: 1865px;
+  margin: 0 auto;
+}
+.number-box {
+  flex: 1;
+  padding: 0 2.5em;
+  margin-bottom: 4em;
+}
+.num-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  color: #1e1e1e;
+}
+
+.numbers .material-icons {
+  display: block;
+  font-size: 6em;
+  color: #2c928d;
+  margin-bottom: 8px;
+}
+
+.num-cont p {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+@media only screen and (min-width: 1300px) {
+  .fig-number,
+  .percent {
+    font-size: 7em;
+  }
+  .numbers {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .number-box {
+    margin-bottom: 0em;
+  }
+  .numbers {
+    flex-direction: row;
+  }
+  .number-box.one {
+    border-right: solid 3px #fff;
+  }
+  .number-box.three {
+    border-left: solid 3px #fff;
+  }
+}
+.numbers a.btn-green {
+  text-decoration: none;
+  color: #0d2753;
+  padding: 1.3em 2em;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 800;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #6175ab, #2c928d) 1;
+  margin-top: 1em;
+}
+.numbers a.btn-green:hover {
+  background: #0d2753;
+  border: solid 4px #0d2753;
+  color: #fff;
 }
