@@ -515,14 +515,19 @@ Stats Content Styles
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-
-  max-width: 1865px;
+  max-width: 1600px;
   margin: 0 auto;
+  gap: 3em;
+  margin-top: 8em;
+  padding: 0 2em;
 }
 .number-box {
   flex: 1;
-  padding: 0 2.5em;
-  margin-bottom: 4em;
+  padding: 2em;
+  margin-bottom: 6em;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding-bottom: 3em;
 }
 .num-cont {
   display: flex;
@@ -536,14 +541,35 @@ Stats Content Styles
 
 .numbers .material-icons {
   display: block;
-  font-size: 6em;
+  font-size: 10em;
   color: #2c928d;
   margin-bottom: 8px;
+  margin-top: -85px;
 }
 
+@media only screen and (min-width: 767px) {
+  .numbers .material-icons {
+    margin-top: -117px;
+  }
+}
 .num-cont p {
   margin-bottom: 1em;
   font-size: 1.3em;
+}
+
+@media only screen and (min-width: 992px) {
+  .number-box {
+    margin-bottom: 0em;
+    padding-bottom: 2em;
+    font-size: 0.8em;
+  }
+  .numbers .material-icons {
+    margin-top: -97px;
+  }
+  .numbers {
+    flex-direction: row;
+    margin-top: 7em;
+  }
 }
 @media only screen and (min-width: 1300px) {
   .fig-number,
@@ -552,20 +578,13 @@ Stats Content Styles
   }
   .numbers {
     flex-direction: row;
+    margin-top: 10em;
   }
-}
-@media only screen and (min-width: 992px) {
   .number-box {
-    margin-bottom: 0em;
+    font-size: 1em;
   }
-  .numbers {
-    flex-direction: row;
-  }
-  .number-box.one {
-    border-right: solid 3px #fff;
-  }
-  .number-box.three {
-    border-left: solid 3px #fff;
+  .numbers .material-icons {
+    margin-top: -117px;
   }
 }
 .numbers a.btn-green {
@@ -621,15 +640,20 @@ footer a {
 }
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
+  text-align: center;
+  flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
   .footer-inner {
     padding: 0 3em;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
 }
 .logo-box {
@@ -642,10 +666,22 @@ footer a {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .footer-box-3 {
   display: flex;
-  gap: 5em;
-  justify-content: flex-end;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-box-3 {
+    gap: 5em;
+    justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 img.seal {
   max-width: 8em;
@@ -666,9 +702,21 @@ footer a.btn-green.display-btn {
 ul.social-link-container {
   font-size: 1.5em;
   display: flex;
-  /* gap: .7em; */
+  margin-top: 1em;
+  width: 250px;
   justify-content: space-between;
-  margin-top: 2.5em;
+  margin: 1em auto;
+}
+@media only screen and (min-width: 992px) {
+  ul.social-link-container {
+    font-size: 1.5em;
+    display: flex;
+    margin-top: 1em;
+    width: initial;
+    justify-content: space-between;
+    margin: initial;
+    margin-top: 3em;
+  }
 }
 .social-link-container li {
   display: inline;
@@ -691,6 +739,9 @@ h3.foot-header {
 }
 .footer-box-4 {
   font-size: 0.9em;
+}
+.footer-box-4 p {
+  margin-bottom: 0px;
 }
 footer a:hover {
   color: #10f4ff;
