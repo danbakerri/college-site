@@ -602,7 +602,7 @@ footer {
 }
 footer::before {
   content: "";
-  background-image: url("/images/Presidents-Seal-logo-White.png");
+  background-image: url("../images/Presidents-Seal-logo-White.png");
   width: 100%;
   position: absolute;
 
