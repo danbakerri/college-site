@@ -10,6 +10,7 @@ body {
 }
 a {
   transition: all 0.4s ease;
+  text-decoration: none;
 }
 .reveal {
   opacity: 0;
@@ -583,4 +584,114 @@ Stats Content Styles
   background: #0d2753;
   border: solid 4px #0d2753;
   color: #fff;
+}
+/* -------------------------------- 
+
+Footer Styles
+
+-------------------------------- */
+
+footer {
+  background: #0d2753;
+  padding-top: 3.5em;
+  color: #fff;
+  padding-bottom: 1.5em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+footer::before {
+  content: "";
+  background-image: url("/images/Presidents-Seal-logo-White.png");
+  width: 100%;
+  position: absolute;
+
+  z-index: -1;
+  background-repeat: no-repeat;
+  bottom: 0;
+
+  opacity: 0.03;
+  top: -400px;
+}
+footer img {
+  width: 100%;
+}
+footer a {
+  color: #fff;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 992px) {
+  .footer-inner {
+    padding: 0 3em;
+  }
+}
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-box-3 {
+  display: flex;
+  gap: 5em;
+  justify-content: flex-end;
+}
+img.seal {
+  max-width: 8em;
+  margin-bottom: 1em;
+}
+footer ul {
+  padding-left: 0px;
+}
+
+footer li {
+  list-style: none;
+}
+footer a.btn-green.display-btn {
+  padding: 0.7em 1.5em;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+ul.social-link-container {
+  font-size: 1.5em;
+  display: flex;
+  /* gap: .7em; */
+  justify-content: space-between;
+  margin-top: 2.5em;
+}
+.social-link-container li {
+  display: inline;
+}
+.social-link-container img {
+  width: 2em;
+
+  filter: invert(13%) sepia(30%) saturate(3238%) hue-rotate(197deg)
+    brightness(90%) contrast(99%);
+}
+h3.foot-header {
+  font-family: "EB Garamond", "Times New Roman", serif;
+  margin-bottom: 0.7em;
+  font-size: 1.4em;
+  color: #10f4ff;
+}
+.footer-box-3-inner {
+  line-height: 2.2em;
+  font-size: 0.9em;
+}
+.footer-box-4 {
+  font-size: 0.9em;
+}
+footer a:hover {
+  color: #10f4ff;
 }
