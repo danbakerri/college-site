@@ -545,6 +545,12 @@ Stats Content Styles
   gap: 3em;
   margin-top: 8em;
   padding: 0 0em;
+  font-size: 1.2em;
+}
+@media only screen and (min-width: 767px) {
+  .numbers {
+    font-size: 1em;
+  }
 }
 
 .number-box {
