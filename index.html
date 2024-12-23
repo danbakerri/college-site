@@ -54,6 +54,15 @@
           aria-labelledby="offcanvasNavbar2Label"
         >
           <div class="offcanvas-header">
+            <img class="mobile-logo" src="./images/Logo-Blue.svg" />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
             <form class="d-flex mobil-search mt-lg-0" role="search">
               <input
                 class="form-control me-2"
@@ -65,15 +74,7 @@
                 Search
               </button>
             </form>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="btn-nav navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="btn-nav navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
@@ -84,9 +85,62 @@
                 <a class="nav-link" href="#">Give</a>
               </li>
             </ul>
-            <ul
-              class="main-nav navbar-nav justify-content-end flex-grow-1 pe-3"
-            >
+            <ul class="main-nav navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Admissions & Aid
+                </a>
+                <div class="animate slideIn dropdown-menu">
+                  <div class="mega-nav-box">
+                    <div class="back-btn">
+                      <button>
+                        <i class="fa-solid fa-arrow-left"></i> Back
+                      </button>
+                    </div>
+                    <div class="title-nav-box">
+                      <span class="navy-title">Admissions & Aid</span>
+                      <a
+                        class="btn-green"
+                        href="https://catalog.nmt.edu/institute-reqs/nmt-degrees"
+                        >Apply Today</a
+                      >
+                    </div>
+
+                    <div class="list-nav-box">
+                      <span class="navy-title-small">Graduate</span>
+                      <ul class="list-group">
+                        <li><a href="#">Action</a></li>
+                        <li>
+                          <a href="#">Another action</a>
+                        </li>
+
+                        <li>
+                          <a href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="list-nav-box">
+                      <span class="navy-title-small">Undergraduate</span>
+                      <ul class="list-group">
+                        <li><a href="#">Action</a></li>
+                        <li>
+                          <a href="#">Another action</a>
+                        </li>
+
+                        <li>
+                          <a href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -179,29 +233,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Admissions & Aid
-                </a>
-                <ul class="animate slideIn dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
+
               <li class="d-none d-lg-block nav-item dropdown">
                 <a
                   class="searchy nav-link dropdown-toggle"
@@ -378,7 +410,7 @@
                   class="facebook"
                   href="https://www.facebook.com/newmexicotech/"
                 >
-                  <i class="fa-duotone fa-solid fa-camera"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li>
