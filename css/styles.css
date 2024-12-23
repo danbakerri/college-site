@@ -60,6 +60,7 @@ a.navbar-brand {
   display: flex;
   flex-direction: column;
   flex-grow: initial;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-body {
