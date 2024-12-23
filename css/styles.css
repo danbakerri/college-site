@@ -186,10 +186,12 @@ a.navbar-brand:hover {
 }
 .main-nav {
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 @media only screen and (min-width: 992px) {
   .main-nav {
     margin-top: 0em;
+    margin-bottom: 0em;
   }
   .btn-nav {
     order: initial;
@@ -212,6 +214,9 @@ a.navbar-brand:hover {
   text-align: center;
   display: inline-block;
 }
+.btn-nav .nav-link {
+  display: block;
+}
 .btn-nav .nav-link:hover,
 .main-nav a.btn-green:hover {
   background: #237c78;
@@ -226,6 +231,7 @@ a.navbar-brand:hover {
 @media only screen and (min-width: 992px) {
   .main-list-nav {
     gap: 4em;
+    margin-top: 0px;
   }
 }
 span.navy-title-small {
@@ -262,6 +268,11 @@ span.navy-title-small {
 
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .main-nav a.nav-link.dropdown-toggle:hover {
+    background: #2d918d1f;
+  }
 }
 .title-nav-box {
   margin-bottom: 2.5em;
