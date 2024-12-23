@@ -150,11 +150,12 @@ img.mobile-logo {
 }
 span.navy-title {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   font-family: "EB Garamond", "Times New Roman", serif;
   font-size: 3em;
   font-weight: 600;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1em;
 }
 @media only screen and (min-width: 992px) {
   .dropdown-toggle::after {
@@ -243,6 +244,12 @@ a.navbar-brand:hover {
   display: flex;
   margin-top: 1.5em;
   gap: 2em;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 992px) {
+  .main-list-nav {
+    gap: 4em;
+  }
 }
 span.navy-title-small {
   display: block;
@@ -250,10 +257,11 @@ span.navy-title-small {
   margin-bottom: 9px;
 }
 .list-group {
-  line-height: 2em;
+  line-height: 2.3em;
 }
 .list-group li {
   list-style: none;
+  margin-bottom: 4px;
 }
 .list-group a {
   padding: 10px 0px;
