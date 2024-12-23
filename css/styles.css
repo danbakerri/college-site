@@ -21,30 +21,7 @@ a {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
 /****** nav ********/
 button.navbar-toggler {
   border: none;
@@ -286,7 +263,13 @@ span.navy-title-small {
   justify-content: space-between;
   align-items: center;
 }
+.title-nav-box {
+  margin-bottom: 2.5em;
+}
 @media only screen and (min-width: 992px) {
+  .title-nav-box {
+    margin-bottom: 0em;
+  }
   .mega-nav-box {
     display: flex;
     gap: 5em;
@@ -439,8 +422,8 @@ nav.navbar.navbar-expand-lg {
   border: none;
   text-shadow: 0px 0px 11px #2828289e;
 }
-.header-vid-btn .material-icons {
-  font-size: 2em;
+.header-vid-btn i {
+  font-size: 1.5em;
 }
 .header-vid-btn.hide-btn {
   display: none;
@@ -460,7 +443,7 @@ nav.navbar.navbar-expand-lg {
     display: none;
   }
   .vid-hero {
-    background: #00703d;
+    background: #202020;
     align-items: center;
     height: initial;
     height: 89%;
@@ -712,17 +695,17 @@ Stats Content Styles
   color: #1e1e1e;
 }
 
-.numbers .material-icons {
+.numbers i {
   display: block;
-  font-size: 10em;
+  font-size: 8em;
   color: #2c928d;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   margin-top: -85px;
   text-shadow: #13f4ff 1px 0 8px;
 }
 
 @media only screen and (min-width: 767px) {
-  .numbers .material-icons {
+  .numbers i {
     margin-top: -117px;
   }
 }
@@ -739,7 +722,7 @@ Stats Content Styles
     border-radius: 6px;
     border: solid 4px #2d918d;
   }
-  .numbers .material-icons {
+  .numbers i {
     margin-top: -97px;
   }
   .numbers {
@@ -760,7 +743,7 @@ Stats Content Styles
   .number-box {
     font-size: 1em;
   }
-  .numbers .material-icons {
+  .numbers i {
     margin-top: -117px;
   }
 }
