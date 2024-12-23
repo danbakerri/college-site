@@ -104,13 +104,15 @@ img.mobile-logo {
 
 .main-nav .dropdown-menu {
   position: fixed;
-  height: 100%;
+
   top: 72px;
   margin: 0;
   border: none;
   border-radius: 0px;
   width: 100%;
   padding: 1em;
+  bottom: 0;
+  overflow-y: scroll;
 }
 @media only screen and (min-width: 500px) {
   .main-nav .dropdown-menu {
@@ -140,7 +142,7 @@ img.mobile-logo {
   border: none;
   background: none;
   font-size: 1.2em;
-  color: #2c928d;
+  color: #6175ab;
 }
 .back-btn {
   padding: 1em 0em;
@@ -180,13 +182,14 @@ span.navy-title {
   }
   .navbar-expand-lg .navbar-nav.main-nav .dropdown-menu {
     position: absolute;
-
+    bottom: initial;
     margin-top: -1px;
     border-radius: 0px;
     padding: 4em 1.5em;
     border-top: 1px solid #e8e8e8;
     height: initial;
     top: initial;
+    overflow-y: initial;
   }
 }
 
@@ -236,6 +239,31 @@ a.navbar-brand:hover {
   background: #237c78;
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }
+.main-list-nav {
+  display: flex;
+  margin-top: 1.5em;
+  gap: 2em;
+}
+span.navy-title-small {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+.list-group {
+  line-height: 2em;
+}
+.list-group li {
+  list-style: none;
+}
+.list-group a {
+  padding: 10px 0px;
+  color: #6175ab;
+  font-weight: 500;
+  border-bottom: 0px solid #fff;
+}
+.list-group a:hover {
+  border-bottom: 3px solid;
+}
 .main-nav a.nav-link.dropdown-toggle {
   font-size: 1.3em;
 
@@ -251,6 +279,15 @@ a.navbar-brand:hover {
   align-items: center;
 }
 @media only screen and (min-width: 992px) {
+  .mega-nav-box {
+    display: flex;
+    gap: 5em;
+
+    justify-content: center;
+  }
+  span.navy-title {
+    margin-top: 0px;
+  }
   .main-nav a.nav-link.dropdown-toggle {
     font-size: 1em;
     padding: 0.8em 0.7em 0.6em;
