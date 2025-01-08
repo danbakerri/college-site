@@ -714,105 +714,7 @@ Stats Content Styles
   margin-top: -85px;
   text-shadow: #13f4ff 1px 0 8px;
 }
-/*
-.numbers .one i {
-  animation: colorchange 40s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-.numbers .two i {
-  animation: colorchange-two 40s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-.numbers .three i {
-  animation: colorchange-three 40s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
 
-@keyframes colorchange {
-  0% {
-    text-shadow: #13f4ff 1px 0 8px;
-  }
-  14% {
-    text-shadow: #b6ff51 1px 0 8px;
-  }
-  28% {
-    text-shadow: #ff13e7 1px 0 8px;
-  }
-  42% {
-    text-shadow: #ff1313 1px 0 8px;
-  }
-  56% {
-    text-shadow: #3313ff 1px 0 8px;
-  }
-  70% {
-    text-shadow: #3aff13 1px 0 8px;
-  }
-  84% {
-    text-shadow: #1362ff 1px 0 8px;
-  }
-  100% {
-    text-shadow: #ffff13 1px 0 8px;
-  }
-}
-@keyframes colorchange-two {
-  0% {
-    text-shadow: #79ffba 1px 0 8px;
-  }
-  14% {
-    text-shadow: #ff51f1 1px 0 8px;
-  }
-  28% {
-    text-shadow: #3313ff 1px 0 8px;
-  }
-  42% {
-    text-shadow: #d0ff13 1px 0 8px;
-  }
-  56% {
-    text-shadow: #a539fc 1px 0 8px;
-  }
-  70% {
-    text-shadow: #13ffb4 1px 0 8px;
-  }
-  84% {
-    text-shadow: #ff1317 1px 0 8px;
-  }
-  100% {
-    text-shadow: #ffa947 1px 0 8px;
-  }
-}
-@keyframes colorchange-three {
-  0% {
-    text-shadow: #135aff 1px 0 8px;
-  }
-  14% {
-    text-shadow: #51ffee 1px 0 8px;
-  }
-  28% {
-    text-shadow: #ffb013 1px 0 8px;
-  }
-  42% {
-    text-shadow: #91ff13 1px 0 8px;
-  }
-  56% {
-    text-shadow: #13a5ff 1px 0 8px;
-  }
-  70% {
-    text-shadow: #f7ff13 1px 0 8px;
-  }
-  84% {
-    text-shadow: #13ff2f 1px 0 8px;
-  }
-  100% {
-    text-shadow: #ff1313 1px 0 8px;
-  }
-}
-  */
 @media only screen and (min-width: 767px) {
   .numbers i {
     margin-top: -117px;
@@ -873,6 +775,30 @@ Stats Content Styles
   border: solid 4px #0d2753;
   color: #fff;
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+/* -------------------------------- 
+
+Vid Styles
+
+-------------------------------- */
+.section-three {
+  background: #f2f2f2;
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 767px) {
+  .section-three {
+    font-size: 1em;
+  }
+}
+
+.section.section-three p,
+.vid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.vid {
+  padding: 0px 15px;
 }
 /* -------------------------------- 
 
