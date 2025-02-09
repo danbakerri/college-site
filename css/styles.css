@@ -517,6 +517,71 @@ nav.navbar.navbar-expand-lg {
   background: #0d2753;
 }
 
+.word,
+.char {
+  -webkit-animation-delay: var(--del);
+  animation-delay: var(--del);
+  -webkit-animation-direction: var(--dir, normal);
+  animation-direction: var(--dir, normal);
+  -webkit-animation-duration: var(--dur);
+  animation-duration: var(--dur);
+  -webkit-animation-iteration-count: var(--it, infinite);
+  animation-iteration-count: var(--it, infinite);
+  -webkit-animation-name: var(--name);
+  animation-name: var(--name);
+  -webkit-animation-timing-function: var(--tf);
+  animation-timing-function: var(--tf);
+  -webkit-animation-fill-mode: var(--fill, forwards);
+  animation-fill-mode: var(--fill, forwards);
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 100%;
+  z-index: 1;
+}
+
+.headline--float .char {
+  --name: float;
+  --dur: 2200ms;
+  --del: calc(var(--char-index) * -0.5s);
+  --tf: ease-in-out;
+  --dir: alternate;
+}
+.headline--float .char:nth-child(2n) {
+  --name: float-alt;
+}
+@-webkit-keyframes float {
+  from {
+    transform: translate(2%, -10%) rotate(-1deg);
+  }
+  to {
+    transform: translate(-2%, 5%) rotate(3deg);
+  }
+}
+@keyframes float {
+  from {
+    transform: translate(2%, -10%) rotate(-1deg);
+  }
+  to {
+    transform: translate(-2%, 5%) rotate(3deg);
+  }
+}
+@-webkit-keyframes float-alt {
+  from {
+    transform: translate(0%, -5%) rotate(-1deg);
+  }
+  to {
+    transform: translate(2%, 10%) rotate(3deg);
+  }
+}
+@keyframes float-alt {
+  from {
+    transform: translate(0%, -5%) rotate(-1deg);
+  }
+  to {
+    transform: translate(2%, 10%) rotate(3deg);
+  }
+}
+
 /* --------------------------------
 
  Block Styles - Featured Content full width

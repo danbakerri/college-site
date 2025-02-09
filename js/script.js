@@ -101,3 +101,4 @@ jQuery(function ($) {
     }
   });
 });
+Splitting();
